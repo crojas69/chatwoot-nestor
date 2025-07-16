@@ -12,6 +12,11 @@ const {
   violet,
   violetDark,
 } = require('@radix-ui/colors');
+const customSlate = { ...slate };
+const customSlateDark = { ...slateDark };
+
+customSlate.slate4 = '#f19106';
+customSlateDark.slate4 = '#f19106';
 export const colors = {
   woot: {
     25: blue.blue2,
@@ -52,30 +57,30 @@ export const colors = {
     900: yellowDark.yellow1,
   },
   slate: {
-    25: slate.slate2,
-    50: slate.slate3,
-    75: slate.slate4,
-    100: slate.slate5,
-    200: slate.slate7,
-    300: slate.slate8,
-    400: slateDark.slate11,
-    500: slateDark.slate10,
-    600: slate.slate11,
-    700: slateDark.slate8,
-    800: slateDark.slate4,
-    900: slateDark.slate1,
+    25: customslate.slate2,
+    50: customslate.slate3,
+    75: customslate.slate4, // color modificado
+    100: customslate.slate5,
+    200: customslate.slate7,
+    300: customslate.slate8,
+    400: customslateDark.slate11,
+    500: customslateDark.slate10,
+    600: customslate.slate11,
+    700: customslateDark.slate8,
+    800: customslateDark.slate4, // color modificado
+    900: customslateDark.slate1,
   },
   black: {
-    50: slate.slate2,
-    100: slateDark.slate12,
-    200: slate.slate7,
-    300: slate.slate8,
-    400: slateDark.slate11,
-    500: slate.slate9,
-    600: slateDark.slate9,
-    700: slateDark.slate8,
-    800: slateDark.slate7,
-    900: slateDark.slate2,
+    50: customslate.slate2,
+    100: customslateDark.slate12,
+    200: customslate.slate7,
+    300: customslate.slate8,
+    400: customslateDark.slate11,
+    500: customslate.slate9,
+    600: customslateDark.slate9,
+    700: customslateDark.slate8,
+    800: customslateDark.slate7,
+    900: customslateDark.slate2,
   },
   red: {
     50: redDark.red12,
