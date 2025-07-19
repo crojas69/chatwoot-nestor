@@ -70,8 +70,9 @@
   enabled: true
   premium: true
 - name: response_bot
-  enabled: false
+  enabled: true
   premium: true
+
 - name: message_reply_to
   enabled: true
   help_url: https://chwt.app/hc/reply-to
@@ -89,11 +90,14 @@
 - name: linear_integration
   enabled: true
 - name: hide_all_chats_for_agent
-  enabled: false
+  enabled: true
+
 - name: hide_contacts_for_agent
-  enabled: false
+  enabled: true
+
 - name: hide_filters_for_agent
-  enabled: false
+  enabled: true
+
 - name: send_agent_name_in_whatsapp_message
   enabled: true
 - name: read_message
@@ -103,11 +107,13 @@
 - name: agent_conversation_viewed
   enabled: true
 - name: hide_unassigned_for_agent
-  enabled: false
+  enabled: true
+
 - name: hide_all_inbox_for_agent
-  enabled: false
-# - name: channel_notifica_me
-#   enabled: false
+  enabled: true
+- name: channel_notifica_me
+  enabled: true
+
 - name: channel_sms
   enabled: true
 - name: channel_whatsapp
@@ -119,10 +125,12 @@
 - name: channel_api
   enabled: true
 - name: hide_delete_message_for_agent
-  enabled: false
+  enabled: true
+
 - name: channel_internal
   enabled: true
 - name: captain_integration
-  enabled: false
+  enabled: true
+
 - name: typebot_integration
-  enabled: false
+  enabled: true
