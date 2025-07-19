@@ -42,10 +42,10 @@ export const getters = {
 
     return diffDays <= TRIAL_PERIOD_DAYS;
   },
-  isFeatureEnabledonAccount: $state => (id, featureName) => {
-    const { features = {} } = findRecordById($state, id);
-    return features[featureName] || false;
+  isFeatureEnabledonAccount: () => () => {
+    return true;
   },
+
 };
 
 export const actions = {
