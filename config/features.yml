@@ -12,8 +12,9 @@
 - name: ip_lookup
   enabled: true
 - name: disable_branding
-  enabled: false
+  enabled: true
   premium: true
+
 - name: email_continuity_on_api_channel
   enabled: true
 - name: help_center
