@@ -26,5 +26,10 @@ EXPOSE 3000
 ENTRYPOINT ["docker/entrypoints/rails.sh"]
 CMD ["bundle", "exec", "rails", "s", "-p", "3000", "-b", "0.0.0.0"]
 
-# FORZAR RECONSTRUCCION DE GEMAS: RAILWAY CACHE BUSTER
-RUN echo "rebuild-$(date +%s)" > /tmp/rebuild.txt
+# ... otras instrucciones ...
+# Si necesitas instalar gems adicionales
+COPY Gemfile Gemfile.lock ./
+# Este comando forzará la reconstrucción de la capa de bundle install
+RUN echo "REBUILD_FOR_ACTSTAGGABLEON_$(date +%Y%m%d%H%M%S)" > /tmp/rebuild_marker.txt
+RUN bundle install --without development test
+# ... el resto de tu Dockerfile
