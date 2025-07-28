@@ -26,5 +26,5 @@ EXPOSE 3000
 ENTRYPOINT ["docker/entrypoints/rails.sh"]
 CMD ["bundle", "exec", "rails", "s", "-p", "3000", "-b", "0.0.0.0"]
 
-# Esto es para forzar un nuevo build en Railway. Fecha: 2025-07-28
-# v1.1
+# FORZAR RECONSTRUCCION DE GEMAS: RAILWAY CACHE BUSTER
+RUN echo "rebuild-$(date +%s)" > /tmp/rebuild.txt
