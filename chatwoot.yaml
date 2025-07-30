@@ -115,5 +115,10 @@ volumes:
 networks:
   traefik_public:
     external: true
+    name: traefik_public
+    driver: overlay
+
   general_network:
     external: true
+    name: chatwoot-nestor_general_network
+    driver: overlay
