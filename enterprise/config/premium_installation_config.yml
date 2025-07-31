@@ -19,4 +19,14 @@
   value: 'https://www.🅷🆄🅱.com/privacy-policy'
 - name: DISPLAY_MANIFEST
   value: true
+
+  installation:
+  enterprise:
+    enabled: true
+    saas: true
+
+  features:
+    branding:
+      enabled: true
+
 # ------- End of Branding Related Config ------- #
