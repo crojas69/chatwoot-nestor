@@ -1,15 +1,13 @@
 {
-  "name": "🅷🆄🅱",
-  "description": "🅷🆄🅱 is a customer support tool for instant messaging channels",
-  "website": "https://www.🅷🆄🅱.com/",
-  "repository": "https://github.com/wkarts/chatwoot",
-  "logo": "https://app.chatwoot.com/brand-assets/logo_thumbnail.svg",
+  "name": "Smartbot de IABOT",
+  "description": "IABOT Smartbot",
+  "website": "https://smartwoot.iabot.com.co/",
+  "repository": "https://github.com/crojas69/smartbotcw",
+  "logo": "/brand-assets/logo_thumbnail.svg",
   "keywords": [
-    "live chat",
-    "customer support",
-    "ruby",
-    "rails",
-    "vue"
+    "whatsapp chat crm",
+    "smartchat",
+    "iabot"
   ],
   "success_url": "/",
   "env": {
@@ -26,16 +24,54 @@
       "value": "production"
     },
     "FRONTEND_URL": {
-      "description": "Public root URL of the 🅷🆄🅱 installation. This will be used in the emails.",
-      "value": "https://CHANGE.herokuapp.com"
+      "description": "Public root URL of the SMARTBOT installation. This will be used in the emails.",
+      "value": "https://smartwoot.iabot.com.co/"
     },
     "INSTALLATION_ENV": {
-      "description": "Installation method used for 🅷🆄🅱.",
+      "description": "Installation method used for SMARTBOT.",
       "value": "heroku"
     },
     "REDIS_OPENSSL_VERIFY_MODE":{
       "description": "OpenSSL verification mode for Redis connections. ref https://help.heroku.com/HC0F8CUS/redis-connection-issues",
       "value": "none"
+    },
+   "ENABLE_ENTERPRISE": {
+      "description": "Enable enterprise features",
+      "value": "true"
+    },
+    "ENABLE_BRANDING": {
+      "description": "Enable white-label branding",
+      "value": "true"
+    },
+    "INSTALLATION_NAME": {
+      "value": "Smartbot de IABOT"
+    },
+    "LOGO": {
+      "value": "/brand-assets/logo.svg"
+    },
+    "LOGO_DARK": {
+      "value": "/brand-assets/logo_dark.svg"
+    },
+    "LOGO_THUMBNAIL": {
+      "value": "/brand-assets/logo_thumbnail.svg"
+    },
+    "BRAND_URL": {
+      "value": "https://smartwoot.iabot.com.co/"
+    },
+    "WIDGET_BRAND_URL": {
+      "value": "https://smartwoot.iabot.com.co/"
+    },
+    "BRAND_NAME": {
+      "value": "IABOT"
+    },
+    "TERMS_URL": {
+      "value": "https://smartwoot.iabot.com.co/terms-of-service"
+    },
+    "PRIVACY_URL": {
+      "value": "https://smartwoot.iabot.com.co/privacy-policy"
+    },
+    "DISPLAY_MANIFEST": {
+      "value": "true"
     }
   },
   "formation": {
@@ -58,7 +94,6 @@
       "plan": "heroku-postgresql:essential-0"
     }
   ],
-  "stack": "heroku-20",
   "buildpacks": [
     {
       "url": "heroku/nodejs"
