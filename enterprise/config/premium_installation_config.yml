@@ -1,32 +1,32 @@
 # ------- Branding Related Config ------- #
-- name: INSTALLATION_NAME
-  value: '🅷🆄🅱'
-- name: LOGO_THUMBNAIL
-  value: '/brand-assets/logo_thumbnail.svg'
-- name: LOGO
-  value: '/brand-assets/logo.svg'
-- name: LOGO_DARK
-  value: '/brand-assets/logo_dark.svg'
-- name: BRAND_URL
-  value: 'https://www.🅷🆄🅱.com'
-- name: WIDGET_BRAND_URL
-  value: 'https://www.🅷🆄🅱.com'
-- name: BRAND_NAME
-  value: '🅷🆄🅱'
-- name: TERMS_URL
-  value: 'https://www.🅷🆄🅱.com/terms-of-service'
-- name: PRIVACY_URL
-  value: 'https://www.🅷🆄🅱.com/privacy-policy'
-- name: DISPLAY_MANIFEST
-  value: true
+env_variables:
+  - name: INSTALLATION_NAME
+    value: 'Smartbot IABOT'
+  - name: LOGO_THUMBNAIL
+    value: '/brand-assets/logo_thumbnail.svg'
+  - name: LOGO
+    value: '/brand-assets/logo.svg'
+  - name: LOGO_DARK
+    value: '/brand-assets/logo_dark.svg'
+  - name: BRAND_URL
+    value: 'https://smartbot.iabot.com.co'
+  - name: WIDGET_BRAND_URL
+    value: 'https://smartbot.iabot.com.co'
+  - name: BRAND_NAME
+    value: 'Smartbot IABOT'
+  - name: TERMS_URL
+    value: 'https://smartbot.iabot.com.co/terms-of-service'
+  - name: PRIVACY_URL
+    value: 'https://smartbot.iabot.com.co/privacy-policy'
+  - name: DISPLAY_MANIFEST
+    value: true
 
-  installation:
+installation:
   enterprise:
     enabled: true
     saas: true
 
-  features:
-    branding:
-      enabled: true
-
+features:
+  branding:
+    enabled: true
 # ------- End of Branding Related Config ------- #

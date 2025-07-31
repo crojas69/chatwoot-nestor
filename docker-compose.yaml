@@ -108,7 +108,7 @@ networks:
   traefik_public:
     external: true
   general_network:
-    driver: bridge
+    driver: overlay
   chatwootsactk_overlay_network:
     external: true
 
