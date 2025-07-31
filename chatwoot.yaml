@@ -1,6 +1,5 @@
 version: "3.8"
 
-
 services:
 
   chatwoot_app:
@@ -18,12 +17,12 @@ services:
       RAILS_ENV: production
       INSTALLATION_ENV: docker
       SECRET_KEY_BASE: ac70a4f7e59d1a60c52050237123fd91
-      FRONTEND_URL: http://smartwoot.iabot.com.co
+      FRONTEND_URL: https://smartwoot.iabot.com.co
       DEFAULT_LOCALE: es_ES
       FORCE_SSL: "true"
       ENABLE_ACCOUNT_SIGNUP: "false"
       REDIS_URL: redis://redis:6379
-      MAILER_SENDER_EMAIL: Chatwoot crojas@iabot.com.co
+      MAILER_SENDER_EMAIL: "Chatwoot crojas@iabot.com.co"
       SMTP_DOMAIN: gmail.com
       SMTP_ADDRESS: smtp.gmail.com
       SMTP_PORT: 587
@@ -61,7 +60,6 @@ services:
         - traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https
         - traefik.http.routers.chatwoot_app.middlewares=sslheader
 
-
   chatwoot_worker:
     image: chatwoot/chatwoot:v3.16.0
     command: bundle exec sidekiq -C config/sidekiq.yml
@@ -75,12 +73,12 @@ services:
       RAILS_ENV: production
       INSTALLATION_ENV: docker
       SECRET_KEY_BASE: ac70a4f7e59d1a60c52050237123fd91
-      FRONTEND_URL: http://smartwoot.iabot.com.co
+      FRONTEND_URL: https://smartwoot.iabot.com.co
       DEFAULT_LOCALE: es_ES
       FORCE_SSL: "true"
       ENABLE_ACCOUNT_SIGNUP: "false"
       REDIS_URL: redis://redis:6379
-      MAILER_SENDER_EMAIL: Chatwoot crojas@iabot.com.co
+      MAILER_SENDER_EMAIL: "Chatwoot crojas@iabot.com.co"
       SMTP_DOMAIN: gmail.com
       SMTP_ADDRESS: smtp.gmail.com
       SMTP_PORT: 587
@@ -92,8 +90,8 @@ services:
       MAILER_INBOUND_EMAIL_DOMAIN: crojas@iabot.com.co
       POSTGRES_HOST: postgres
       POSTGRES_USERNAME: postgres
-      POSTGRES_PASSWORD: 09ca4098f4eed7914956
-      POSTGRES_DATABASE: chatwoot_nestor
+      POSTGRES_PASSWORD: 91fe5280f8578420214c25e343863a8f
+      POSTGRES_DATABASE: chatwoot
       ACTIVE_STORAGE_SERVICE: local
       RAILS_LOG_TO_STDOUT: "true"
       USE_INBOX_AVATAR_FOR_BOT: "true"
