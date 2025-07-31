@@ -116,6 +116,9 @@ networks:
     name: traefik_public
     driver: overlay
 
+  chatwootsactk_overlay_network:
+    external: true
+
   general_network:
     external: true
     name: chatwoot-nestor_general_network
