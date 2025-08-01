@@ -17,7 +17,7 @@ services:
       RAILS_ENV: production
       INSTALLATION_ENV: docker
       SECRET_KEY_BASE: ac70a4f7e59d1a60c52050237123fd91
-      FRONTEND_URL: https://smartwoot.iabot.com.co
+      FRONTEND_URL: https://smartbot.iabot.com.co/
       DEFAULT_LOCALE: es_ES
       FORCE_SSL: "true"
       ENABLE_ACCOUNT_SIGNUP: "false"
@@ -73,7 +73,7 @@ services:
       RAILS_ENV: production
       INSTALLATION_ENV: docker
       SECRET_KEY_BASE: ac70a4f7e59d1a60c52050237123fd91
-      FRONTEND_URL: https://smartwoot.iabot.com.co
+      FRONTEND_URL: https://smartbot.iabot.com.co/
       DEFAULT_LOCALE: es_ES
       FORCE_SSL: "true"
       ENABLE_ACCOUNT_SIGNUP: "false"
