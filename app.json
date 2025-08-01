@@ -1,7 +1,7 @@
 {
   "name": "Smartbot de IABOT",
   "description": "IABOT Smartbot",
-  "website": "https://smartwoot.iabot.com.co/",
+  "website": "https://smartbot.iabot.com.co/",
   "repository": "https://github.com/crojas69/smartbotcw",
   "logo": "/brand-assets/logo_thumbnail.svg",
   "keywords": [
@@ -25,7 +25,7 @@
     },
     "FRONTEND_URL": {
       "description": "Public root URL of the SMARTBOT installation. This will be used in the emails.",
-      "value": "https://smartwoot.iabot.com.co/"
+      "value": "https://smartbot.iabot.com.co/"
     },
     "INSTALLATION_ENV": {
       "description": "Installation method used for SMARTBOT.",
@@ -56,19 +56,19 @@
       "value": "/brand-assets/logo_thumbnail.svg"
     },
     "BRAND_URL": {
-      "value": "https://smartwoot.iabot.com.co/"
+      "value": "https://smartbot.iabot.com.co/"
     },
     "WIDGET_BRAND_URL": {
-      "value": "https://smartwoot.iabot.com.co/"
+      "value": "https://smartbot.iabot.com.co/"
     },
     "BRAND_NAME": {
       "value": "IABOT"
     },
     "TERMS_URL": {
-      "value": "https://smartwoot.iabot.com.co/terms-of-service"
+      "value": "https://smartbot.iabot.com.co/terms-of-service"
     },
     "PRIVACY_URL": {
-      "value": "https://smartwoot.iabot.com.co/privacy-policy"
+      "value": "https://smartbot.iabot.com.co/privacy-policy"
     },
     "DISPLAY_MANIFEST": {
       "value": "true"
